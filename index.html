@@ -19,13 +19,17 @@
       }
       </style>
   </head>
+  
   <body>
-    <h1 style="font-family: Microsoft PhagsPa; margin: 2%;"><b>Planets</b></h1>
-    <div align="right">
-      <input type="text" name="search" id="search" placeholder="Search Name" class="form-control">
+    <h1 style="font-family: Microsoft PhagsPa; margin: 1%;"><b>Planets</b></h1>
+    <div align="left">
+      <br><input id="myInput" type="text" placeholder="Search.." class="form-control"
+      style="width: 30%;
+            margin-left: 1.2%;"><br>
     </div>
+
     <div class="container-fluid">
-      <table class="table table-hover" id="ide_table">
+      <table class="table table-hover" id="ide_table"><thead>
         <tr style="background-color: #01245f; color: #DDD;">
           <th>Name</th>
           <th>Rotation Period</th>
@@ -41,7 +45,8 @@
           <th>Created</th>
           <th>Edited</th>
           <th>URL</th>
-        </tr>
+        </tr></thead>
+        <tbody></tbody>
       </table>
     </div>
   </body>
@@ -83,5 +88,4 @@
           $('#ide_table').append(id_table);
         });
       });
-
     </script>
